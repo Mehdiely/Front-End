@@ -1,0 +1,22 @@
+h2{
+    color: rgba(106, 25, 199, 0.918);
+}
+body{
+padding: 150px; background-color:(255,255,255,0.6) overlay;  
+background-image:   url(../images/villa.jpg);
+background-size: cover;
+background-color: rgb(255, 255, 255,0.2);
+background-blend-mode: overlay;
+}
+
+::-webkit-textfield-decoration-container{
+    display: flex;
+    min-height: 100%;
+}
+p{
+    color: white;
+}
+li{
+    color: white;
+    
+}
