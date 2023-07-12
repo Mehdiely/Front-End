@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+body{
+    font-family: 'Grand Hotel', cursive;
+    color: rgb(255, 252, 252);
+    
+        background: linear-gradient(rgba(2, 0, 0, 0.486), rgba(255, 255, 255, 0.5)), url(../images/villa.jpg);
+   
+    
+      
+   background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    /* 100 vh veut dire que le body prend 100% de la taille de l'ecran 
+    peut importe l'appareil */
+    letter-spacing: 3px;
+    font-size: xx-large;
+}
+
+h1{
+   
+    text-align: center;
+    font-size: 3rem ;
+    /* la taille normal d'un h1 est de 2rem */
+    /* les taille doivent etre en rem */
+    text-shadow:14px -11px 14px rgba(0, 0, 0, 0.336) ;    
+    text-decoration: underline;
+    }
+
+    main{
+       
+        min-height: 500px;
+        background-color: rgba(255, 255, 255, 0.507);
+        width: 90%;
+        margin:0 auto;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 60px;
+        box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.486);
+        padding: 15px;
+    }
+    h2
+    {
+        margin: 0;
+    }
+    
+    .flexbox, .grid{
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;px;
+    }
+/* flexbox */
+/* Sert a répartir équitablement des éléments sur une page */
+
+.flexbox ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.flexbox li{
+    list-style: none;
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.438);
+    /* centrer unique élément verticelement et horizontalement
+     */
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+
+}
+.grid img{
+    width: 100%;
+    margin-top: 10px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 12"
+    "ta ta"
+    "vi bt";
+}
+input, textarea{
+    margin: 10px;
+    padding: 5px;
+    border: solid darkblue;
+    border-radius: 10px;
+    font-family: "grand hotel" ; 
+}
+textarea{
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+#bt {
+    grid-area: bt;
+    cursor: pointer;
+    background-color: cyan;
+
+}
+#bt:hover{
+    background-color: darkblue;
+}
